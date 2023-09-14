@@ -25,7 +25,8 @@
                     o.querySelector(".cards__active").classList.remove("cards__active"),
                     o.querySelector(".n"+e).classList.add("cards__active")}
                     e.forEach(((i,l)=>{let d=`<div class="image n${l} ${0===l?"active":""}" style="background-image:url(${e[l].url});" data-index="${l}"></div>`;
-                    t.innerHTML+=d;let _=`<div class="dot_item n${l} ${0===l?"dot__active":""}" data-index="${l}"></div>`;
+                    t.innerHTML+=d;
+                    let _=`<div class="dot_item n${l} ${0===l?"dot__active":""}" data-index="${l}"></div>`;
                     c.innerHTML+=_,
                     c.querySelectorAll(".dot_item").forEach((e=>{e.addEventListener("click",(function(){n(this.dataset.index)}))}));
                     let v=`<div class="slider__title n${l} ${0===l?"title__active":""}" data-index="${l}">${e[l].title}</div>`;
