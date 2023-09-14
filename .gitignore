@@ -1,6 +1,0 @@
-src
-gulpfile.babel.js
-node_modules
-*.txt
-*.json
-*.yml
